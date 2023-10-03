@@ -1,0 +1,22 @@
+Status: wip
+
+Title: Go Backend Clean Architecture
+URL: https://github.com/amitshekhariitbhu/go-backend-clean-architecture
+
+Architecture layers of the project:
+
+- Router 
+- Controller 
+- Usecase 
+- Repository 
+- Domain 
+
+Major packages used in this project
+
+- gin 
+- mongo go driver 
+- jwt
+- viper 
+- bcrypt 
+- testify 
+- mockery
