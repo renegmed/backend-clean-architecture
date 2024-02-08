@@ -27,3 +27,7 @@ test_repository:
 curl_signup:
 	curl -XPOST -H 'Content-Type: multipart/form-data' --form name=John --form email=john@test.com --form password=password123 localhost:8080/signup 
 
+curl_login:
+	curl -XPOST localhost:8080/login -d 'email=john@test.com' -d 'password=password123'  # -d '{"email": "john@test.com", "password": "password123"}'
+
+TOKEN := eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiIsImlkIjoiNjVjMjhmMWZhZTEyNjIwN2JlNTIxNDJjIiwiZXhwIjoxNzA3MzY0OTg4fQ.-RFeCKfySSL9M9RVmIpYDEj8kgrj6btVhKu1-ju5uD0","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzI4ZjFmYWUxMjYyMDdiZTUyMTQyYyIsImV4cCI6MTcwNzk2MjU4OH0.zpBl1r9IqlpkQ5JRaSpYMA_JQuuAnAovhNGdVg3LQtU

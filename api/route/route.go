@@ -12,6 +12,7 @@ func Setup(env *bootstrap.Env, timeout time.Duration, db mongo.Database, gin *gi
 	publicRouter := gin.Group("")
 	// all public APIs
 	NewSignupRouter(env, timeout, db, publicRouter)
+	NewLoginRouter(env, timeout, db, publicRouter)
 
 	// protectedRouter := gin.Group("")
 
